@@ -5,61 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lawrence Chen</title>
     <style>
-        /* Reset default margins and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f7f6;
-        }
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f4f7f6;
+    }
 
-        /* Navigation Bar Styles */
-        nav {
-            background-color: #2c3e50;
-            color: white;
-            padding: 1rem;
-            position: sticky; /* Keeps it at the top as you scroll */
-            top: 0;
-        }
+    /* Standard Desktop Navbar */
+    nav {
+        background-color: #2c3e50;
+        padding: 1rem;
+    }
 
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    /* --- THE MEDIA QUERY --- */
+    /* If the screen is 600px wide or LESS... */
+    @media (max-width: 600px) {
         nav ul {
-            display: flex; /* Aligns list items horizontally */
-            justify-content: center; /* Centers the links */
-            list-style: none;
+            flex-direction: column; /* Stack links vertically */
+            align-items: center;    /* Center them */
         }
 
         nav li {
-            margin: 0 20px;
+            margin: 10px 0;         /* Add space between stacked links */
         }
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #3498db;
-        }
-
-        /* Main content container */
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-    </style>
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+</style>
 </head>
 <body>
 
