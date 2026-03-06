@@ -3,54 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Basic Page</title>
+    <title>Lawrence Chen</title>
     <style>
-        /* General page styling */
+        /* Reset default margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 40px auto; /* Centers the content */
-            padding: 0 20px;
             background-color: #f4f7f6;
         }
 
-        /* Styling the header */
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+            position: sticky; /* Keeps it at the top as you scroll */
+            top: 0;
+        }
+
+        nav ul {
+            display: flex; /* Aligns list items horizontally */
+            justify-content: center; /* Centers the links */
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* Main content container */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
         h1 {
             color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        /* Making the link look like a button */
-        .btn {
-            display: inline-block;
-            background: #3498db;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #2980b9;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to My Modern Page</h1>
-    <p>By adding just a few lines of CSS, we've changed the fonts, added spacing, and centered the layout to make it much easier on the eyes.</p>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-    <ul>
-        <li><strong>Margin:</strong> Adds space outside an element.</li>
-        <li><strong>Padding:</strong> Adds space inside an element.</li>
-        <li><strong>Border-radius:</strong> Rounds the corners of boxes.</li>
-    </ul>
-
-    <a href="#" class="btn">Explore More</a>
+    <div class="container">
+        <h1>Welcome to the Homepage</h1>
+        <p>The navigation bar above stays at the top of the screen. We used <strong>Flexbox</strong> (<code>display: flex</code>) to line up the links horizontally instead of having them stacked like a standard list.</p>
+    </div>
 
 </body>
 </html>
