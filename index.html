@@ -3,19 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
+    <title>Modern Basic Page</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto; /* Centers the content */
+            padding: 0 20px;
+            background-color: #f4f7f6;
+        }
+
+        /* Styling the header */
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        /* Making the link look like a button */
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Hello, World!</h1>
-    <p>This is a basic HTML page structure.</p>
+    <h1>Welcome to My Modern Page</h1>
+    <p>By adding just a few lines of CSS, we've changed the fonts, added spacing, and centered the layout to make it much easier on the eyes.</p>
 
     <ul>
-        <li>First item</li>
-        <li>Second item</li>
+        <li><strong>Margin:</strong> Adds space outside an element.</li>
+        <li><strong>Padding:</strong> Adds space inside an element.</li>
+        <li><strong>Border-radius:</strong> Rounds the corners of boxes.</li>
     </ul>
 
-    <a href="https://www.google.com">Click here to visit Google</a>
+    <a href="#" class="btn">Explore More</a>
 
 </body>
 </html>
